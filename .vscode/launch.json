@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "C#: Store Debug",
+        "type": "dotnet",
+        "request": "launch",
+        "projectPath": "${workspaceFolder}/src/00 demo/Store/Store.csproj"
+      },
+      {
+        "name": "C#: Products Debug",
+        "type": "dotnet",
+        "request": "launch",
+        "projectPath": "${workspaceFolder}/src/00 demo/Products/Products.csproj"
+      }
+    ],
+    "compounds": [
+      {
+        "name": "Launch Store and Products",
+        "configurations": ["C#: Store Debug", "C#: Products Debug"]
+      }
+    ]
+  }
